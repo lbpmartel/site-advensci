@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Mission from './components/Mission';
+import Team from './components/Team';
 import './App.css';
 
 class App extends Component {
@@ -32,6 +33,7 @@ class App extends Component {
     </nav>
     <Header />
     <Mission />
+    <Team />
     </main>
 
     );

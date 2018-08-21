@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import Mission from './components/Mission';
 import Team from './components/Team';
+import Contact from './components/Contact';
 import './App.css';
 
 class App extends Component {
@@ -34,6 +35,8 @@ class App extends Component {
     <Header />
     <Mission />
     <Team />
+
+    <Contact />
     </main>
 
     );

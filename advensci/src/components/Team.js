@@ -21,16 +21,19 @@ class Team extends React.Component {
         <div class="container">
         <h2 class="team-title">Notre équipe</h2>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-sm-6 col-lg-4">
               <Member memberImg = {this.state.img_rayane} memberName={this.state.name_rayane}/>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-lg-4">
               <Member memberImg = {this.state.img_guillaume} memberName={this.state.name_guillaume}/>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-lg-4">
               <Member memberImg = {this.state.img_louis} memberName={this.state.name_louis}/>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6">
+              <Member memberImg = {this.state.img_francis} memberName={this.state.name_francis}/>
+            </div>
+            <div class="col-sm-6">
               <Member memberImg = {this.state.img_francis} memberName={this.state.name_francis}/>
             </div>
           </div>

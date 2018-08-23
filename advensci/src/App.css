@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "open_sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/open-sans-v15-latin-regular.eot?") format("eot"), url("/fonts/open-sans-v15-latin-regular.woff2") format("woff2"), url("/fonts/open-sans-v15-latin-regular.woff") format("woff"), url("/fonts/open-sans-v15-latin-regular.ttf") format("truetype"), url("/fonts/open-sans-v15-latin-regular.svg#open_sans") format("svg");
+}
+
+@font-face {
+  font-family: "open_sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/open-sans-v15-latin-600.eot?") format("eot"), url("/fonts/open-sans-v15-latin-600.woff2") format("woff2"), url("/fonts/open-sans-v15-latin-600.woff") format("woff"), url("/fonts/open-sans-v15-latin-600.ttf") format("truetype"), url("/fonts/open-sans-v15-latin-600.svg#open_sans") format("svg");
+}
+
+@font-face {
+  font-family: "open_sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/open-sans-v15-latin-700.eot?") format("eot"), url("/fonts/open-sans-v15-latin-700.woff2") format("woff2"), url("/fonts/open-sans-v15-latin-700.woff") format("woff"), url("/fonts/open-sans-v15-latin-700.ttf") format("truetype"), url("/fonts/open-sans-v15-latin-700.svg#open_sans") format("svg");
+}
+
 .navbar-brand {
   position: relative;
   width: 170px;
@@ -11,23 +32,38 @@
 }
 
 .jumbotron {
-  height: 990px;
+  margin-top: 72px;
+  height: 700px;
   color: white;
   margin-bottom: 0px !important;
 }
 
+.jumbotron h1 {
+  color: #13a996;
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 95px;
+}
+
+.jumbotron h1 img {
+  max-height: 1.2em;
+  position: absolute;
+  left: -95px;
+  bottom: 15px;
+  padding-left: 95px;
+}
+
 .background-model {
   background: linear-gradient(rgba(22, 46, 57, 0.2), rgba(22, 46, 57, 0.2)), url(/img/bg.jpg) no-repeat center center;
-
 }
 
 .background-header {
-  background: linear-gradient(rgba(22, 46, 57, 0.1), rgba(22, 46, 57, 0.1)), url(/img/laptop-guy.jpg) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/laptop-guy.jpg) no-repeat 12% 40%;
 }
 
 .citation {
-  background-color: #f2f2f2;
-  background-image: url(/img/fond.png);
   background-size: 85% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -41,14 +77,14 @@
   height: 100%;
 }
 
-.citation p {
-  color: #60a795;
+.citation h4 {
+  color: white;
   font-size: 26px;
   text-align: center;
 }
 
 .mission {
-  background-image:linear-gradient(90deg, rgba(0, 169, 157, 1), rgba(34, 181, 115, 1));
+  background-image: linear-gradient(90deg, #00a99d, #22b573);
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -73,35 +109,40 @@
 }
 
 .vertical-center {
-  min-height: 500px; 
+  min-height: 500px;
   display: flex;
   align-items: center;
 }
 
 .team {
-  margin-bottom: 75px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-.team-title {
+.team .team-title {
   text-align: center;
   margin-bottom: 25px;
   margin-top: 50px;
 }
 
-.member {
-  margin-top: 10px;
+.team .member {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-.img-member {
+.team .member img {
   height: 200px;
   margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.name-member {
+.team .member .name {
   font-size: 23px;
   font-weight: 400;
   color: #4e5052;
-  letter-spacing: 1px;
   margin-bottom: 5px;
   margin-top: 5px;
   text-align: center;

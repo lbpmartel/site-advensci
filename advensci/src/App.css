@@ -1,13 +1,56 @@
+.navbar-brand {
+  position: relative;
+  width: 170px;
+  left: 15px;
+  max-height: 70px;
+}
+
+.logo {
+  max-height: 50px;
+  max-width: 50px;
+}
+
 .jumbotron {
-  background: linear-gradient(rgba(22, 46, 57, 0.3), rgba(22, 46, 57, 0.3)), url(/img/bg.jpg) no-repeat center center;
   height: 990px;
   color: white;
   margin-bottom: 0px !important;
 }
 
+.background-model {
+  background: linear-gradient(rgba(22, 46, 57, 0.2), rgba(22, 46, 57, 0.2)), url(/img/bg.jpg) no-repeat center center;
+
+}
+
+.background-header {
+  background: linear-gradient(rgba(22, 46, 57, 0.1), rgba(22, 46, 57, 0.1)), url(/img/laptop-guy.jpg) no-repeat center center;
+}
+
+.citation {
+  background-color: #f2f2f2;
+  background-image: url(/img/fond.png);
+  background-size: 85% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 430px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.citation .container {
+  height: 100%;
+}
+
+.citation p {
+  color: #60a795;
+  font-size: 26px;
+  text-align: center;
+}
+
 .mission {
-  background: linear-gradient(90deg, rgba(0, 169, 157, 1), rgba(34, 181, 115, 1));
-  min-height: 300px;
+  background-image:linear-gradient(90deg, rgba(0, 169, 157, 1), rgba(34, 181, 115, 1));
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mission .row div {
@@ -21,6 +64,18 @@
 
 .mission .row {
   height: 100%;
+}
+
+.mission-p {
+  color: #f2f2f2;
+  font-size: 18px;
+  text-align: center;
+}
+
+.vertical-center {
+  min-height: 500px; 
+  display: flex;
+  align-items: center;
 }
 
 .team {

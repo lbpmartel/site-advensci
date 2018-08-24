@@ -43,7 +43,6 @@ class App extends Component {
                 <Mission />
                 <Team />
                 <Model />
-
                 <Contact />
             </main>
 

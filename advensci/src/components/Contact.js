@@ -1,4 +1,5 @@
 import React from 'react';
+import ParticipantForm from './ParticipantForm';
 
 class Contact extends React.Component {
   render() {
@@ -6,25 +7,8 @@ class Contact extends React.Component {
       <div class="container-fluid">
         <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <p>
-              Advensci est une plateforme accessible qui permet
-              aux chercheurs de recruter des participant.e.s pour
-              leurs études.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <p>
-              Découvre qui se fait dans le monde de la recherche en
-              trouvant des études qui t'intéressent à partir d'une
-              application facile à utiliser.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <p>
-              Bénéficie de compensations financières tout en
-              contribuant à l’avancement de la science!
-            </p>
+          <div class="col-12 m-auto">
+              <ParticipantForm />
           </div>
         </div>
         </div>

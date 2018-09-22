@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Mission from './components/Mission';
 import Team from './components/Team';
 import Contact from './components/Contact';
-import Citation from './components/Citation';
+import Prizes from './components/Prizes';
 import Model from './components/Model';
 import './App.css';
 
@@ -43,7 +43,9 @@ class App extends Component {
                 <Mission />
                 <Team />
                 <Model />
+                <Prizes />
                 <Contact />
+                
             </main>
 
         );

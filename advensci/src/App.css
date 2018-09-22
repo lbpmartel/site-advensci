@@ -44,7 +44,7 @@
 
 .jumbotron {
   margin-top: 72px;
-  height: 700px;
+  height: 800px;
   color: white;
   margin-bottom: 0px !important;
 }
@@ -126,15 +126,15 @@
 }
 
 .team {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
   margin-bottom: 50px;
 }
 
-.team .team-title {
+.title {
   text-align: center;
-  margin-bottom: 25px;
-  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .team .member {
@@ -148,6 +148,7 @@
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
 }
 
 .team .member .name {
@@ -163,4 +164,47 @@
   margin-top: 15px;
   margin-bottom: 15px;
   height: 100px;
+}
+
+.prizes {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.border {
+  border: 10px;
+}
+
+.prizes .prize {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.prizes .prize img {
+  height: 40px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prizes .prize-container {
+  margin-right: auto;
+  margin-left: auto;
+  height: 200px;
+  
+}
+
+.prizes .prize-name {
+  font-size: 23px;
+  font-weight: 400;
+  color: #4e5052;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
 }

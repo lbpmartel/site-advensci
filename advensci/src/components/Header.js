@@ -6,7 +6,7 @@ class Header extends React.Component {
             <div class="jumbotron jumbotron-fluid background-header">
                 <div class="container">
                     <div class="row">
-                        <h1 class="display-3 text-center"><img src="/img/logo.png" class="img-fluid" />dvensci</h1>
+                        <h1 class="display-3 text-center"><img src="/img/logo.png" class="img-fluid" alt=" " />dvensci</h1>
                         <p class="lead"></p>
                     </div>
                 </div>

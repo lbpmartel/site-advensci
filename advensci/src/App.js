@@ -5,6 +5,7 @@ import Team from './components/Team';
 import Contact from './components/Contact';
 import Prizes from './components/Prizes';
 import Model from './components/Model';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends Component {
@@ -45,6 +46,7 @@ class App extends Component {
                 <Model />
                 <Prizes />
                 <Contact />
+                <Footer />
                 
             </main>
 

@@ -39,7 +39,7 @@
 #mc_embed_signup {
   background: #fff;
   clear: left;
-  font: 14px Helvetica,Arial,sans-serif;
+  font: 14px Helvetica, Arial, sans-serif;
 }
 
 .jumbotron {
@@ -73,6 +73,7 @@
 .background-header {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/laptop-guy.jpg) no-repeat 12% 40%;
 }
+
 
 .citation {
   background-size: 85% 100%;
@@ -168,7 +169,7 @@
 
 .prizes {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
   margin-bottom: 50px;
 }
 
@@ -197,7 +198,7 @@
   margin-right: auto;
   margin-left: auto;
   height: 200px;
-  
+
 }
 
 .prizes .prize-name {
@@ -207,4 +208,34 @@
   margin-bottom: 5px;
   margin-top: 5px;
   text-align: center;
+}
+
+.contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+
+/* MailChimp */
+/* ID mc_embed_signup */
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+/* CLASS response ID mce-error-response*/
+.response #mce-error-response {
+  display: none;
+}
+
+/* CLASS response ID mce-success-response*/
+.response #mce-success-response {
+  display: none;
+}
+
+#mailchimp-antibot {
+  position: absolute;
+  left: -5000px; 
 }

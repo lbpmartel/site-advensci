@@ -22,7 +22,7 @@ class Prizes extends Component {
               <div class="row">
                 <div class="col-sm-6 col-lg-4 border rounded shadow prize-container">
                   <div>
-                    <Prize prizeImg={this.state.img_explorez} prizeTitle=" " />
+                    <Prize prizeImg={this.state.img_explorez} prizeTitle="Obtention de" />
                   </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 border rounded shadow prize-container">

@@ -16,7 +16,7 @@ class Prizes extends Component {
     return (
       <div>
         <row>
-          <div class="container-fluid prizes">
+          <div class="container-fluid prizes" id="prix">
             <div class="container">
               <h1 className="title">Nos prix</h1>
               <div class="row">

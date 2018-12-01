@@ -3,7 +3,7 @@ import React from 'react';
 class Mission extends React.Component {
   render() {
     return (
-      <div name="mission" class="container-fluid mission vertical-center">
+      <div name="mission" id="mission" class="container-fluid mission vertical-center">
         <div class="container">
         <div class="row">
           <div class="col-md-4">

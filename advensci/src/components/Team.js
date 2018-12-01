@@ -20,7 +20,7 @@ class Team extends React.Component {
   }
   render() {
     return (
-      <div class="container-fluid team">
+      <div class="container-fluid team" id="team">
         <div class="container">
           <h2 class="title">Notre équipe</h2>
           <div class="row">

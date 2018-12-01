@@ -5,6 +5,9 @@
 @include font-face(open_sans, "/fonts/open-sans-v15-latin-600", 600, normal, eot woff2 woff ttf svg);
 @include font-face(open_sans, "/fonts/open-sans-v15-latin-700", 700, normal, eot woff2 woff ttf svg);
 
+main {
+    padding-top: 72.06px;
+}
 
 .navbar-brand {
     position: relative;
@@ -18,10 +21,11 @@
     max-width: 50px;
 }
 
-.mailchiant {
+.mailchimp {
     position: absolute;
     left:-5000px;
 }
+
 #mc_embed_signup{
     background:#fff;
     clear:left;
@@ -29,7 +33,6 @@
 }
 
 .jumbotron {
-    margin-top: 72px;
     height: 700px;
     color: white;
     margin-bottom: 0px !important;

@@ -19,21 +19,25 @@
   src: url("/fonts/open-sans-v15-latin-700.eot?") format("eot"), url("/fonts/open-sans-v15-latin-700.woff2") format("woff2"), url("/fonts/open-sans-v15-latin-700.woff") format("woff"), url("/fonts/open-sans-v15-latin-700.ttf") format("truetype"), url("/fonts/open-sans-v15-latin-700.svg#open_sans") format("svg");
 }
 
+main {
+    padding-top: 72.06px;
+}
+
 .navbar-brand {
-  position: relative;
-  width: 170px;
-  left: 15px;
-  max-height: 70px;
+    position: relative;
+    width: 170px;
+    left: 15px;
+    max-height: 70px;
 }
 
 .logo {
-  max-height: 50px;
-  max-width: 50px;
+    max-height: 50px;
+    max-width: 50px;
 }
 
-.mailchiant {
-  position: absolute;
-  left: -5000px;
+.mailchimp {
+    position: absolute;
+    left:-5000px;
 }
 
 #mc_embed_signup {
@@ -43,7 +47,6 @@
 }
 
 .jumbotron {
-  margin-top: 72px;
   height: 800px;
   color: white;
   margin-bottom: 0px !important;

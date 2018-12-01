@@ -7,7 +7,7 @@ class Contact extends React.Component {
   
   render() {
     return (
-      <div class="container-fluid contact">
+      <div class="container-fluid contact" id="contact">
         <div class="container">
         <h2 class="title">Soyez un des premiers à vous inscrire!</h2>
           <div class="row">

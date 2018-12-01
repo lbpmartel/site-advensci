@@ -9,7 +9,7 @@ class Team extends React.Component {
       img_guillaume: "guillaume_compressed.png",
       img_louis: "louis_compressed.png",
       img_luis: "luis_compressed.png",
-      img_francis: "francis_compressed.png",
+      img_francis: "francis_compressed.jpg",
       name_rayane: "Rayane Zahal",
       name_guillaume: "Guillaume Rocher",
       name_louis: "Louis-Bernard Poulin",

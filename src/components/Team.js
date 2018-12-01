@@ -5,10 +5,10 @@ class Team extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      img_rayane: "rayane_compressed.png",
-      img_guillaume: "guillaume_compressed.png",
-      img_louis: "louis_compressed.png",
-      img_luis: "luis_compressed.png",
+      img_rayane: "rayane_compressed.jpg",
+      img_guillaume: "guillaume_compressed.jpg",
+      img_louis: "louis_compressed.jpg",
+      img_luis: "luis_compressed.jpg",
       img_francis: "francis_compressed.jpg",
       name_rayane: "Rayane Zahal",
       name_guillaume: "Guillaume Rocher",

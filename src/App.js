@@ -20,20 +20,17 @@ class App extends Component {
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
+                        
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#mission">Mission<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="mailto:info@advensci.ca"><img src="img/ma.jpg"></img></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#team">Notre équipe<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="http://facebook.com"><img src="img/fa.jpg"></img></a>                                    
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#prix">Prix<span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contactez-nous<span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="http://twitter.com"><img src="img/tw.jpg"></img></a>                            
                                 </li>
                             </ul>
                         </div>

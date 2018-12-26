@@ -4,9 +4,10 @@ class Member extends React.Component {
 
     render() {
         return (
-            <div class="member">
+            <div>
                 <img class="member-img" src={"./img/" + this.props.memberImg} alt=" "/>
                 <h3 class="name">{this.props.memberName}</h3>
+                <h4 class="titre">{this.props.memberTitle}</h4>
             </div>
         );
     }

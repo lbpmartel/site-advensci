@@ -5,39 +5,38 @@ class Team extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      img_rayane: "rayane_compressed.jpg",
-      img_guillaume: "guillaume_compressed.png",
-      img_louis: "louis_compressed.jpg",
-      img_luis: "luis_compressed.jpg",
-      img_francis: "francis_compressed.jpg",
+      img_rayane: "rayane.jpg",
+      img_guillaume: "guillaume.jpg",
+      img_louis: "louis.jpg",
+      img_luis: "luis.jpg",
+      titre_rayane: "Fondatrice, directrice générale",
+      titre_guillaume: "Cofondateur",
+      titre_louis: "Développeur",
+      titre_luis: "Directeur technique",
       name_rayane: "Rayane Zahal",
       name_guillaume: "Guillaume Rocher",
       name_louis: "Louis-Bernard Poulin",
-      name_luis: "Luis Gaylor Nobre",
-      name_francis: "Francis Roy"
-
+      name_luis: "Luis-Gaylor Nobre"
     }
   }
   render() {
     return (
       <div class="container-fluid team" id="team">
         <div class="container">
-          <h2 class="title">Notre équipe</h2>
+          <h3>Qui sommes-nous ?</h3>
+          <h2>Une équipe multidisciplinaire</h2>
           <div class="row">
-            <div class="col-sm-6 col-lg-4">
-              <Member memberImg={this.state.img_rayane} memberName={this.state.name_rayane} />
+            <div class="col-sm-6 col-lg-3">
+              <Member memberImg={this.state.img_rayane} memberName={this.state.name_rayane} memberTitle={this.state.titre_rayane} />
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <Member memberImg={this.state.img_guillaume} memberName={this.state.name_guillaume} />
+            <div class="col-sm-6 col-lg-3">
+              <Member memberImg={this.state.img_guillaume} memberName={this.state.name_guillaume} memberTitle={this.state.titre_rayane} />
             </div>
-            <div class="col-sm-6 col-lg-4">
-              <Member memberImg={this.state.img_louis} memberName={this.state.name_louis} />
+            <div class="col-sm-6 col-lg-3">
+              <Member memberImg={this.state.img_louis} memberName={this.state.name_louis} memberTitle={this.state.titre_rayane} />
             </div>
-            <div class="col-sm-6">
-              <Member memberImg={this.state.img_francis} memberName={this.state.name_francis} />
-            </div>
-            <div class="col-sm-6">
-              <Member memberImg={this.state.img_luis} memberName={this.state.name_luis} />
+            <div class="col-sm-6 col-lg-3">
+              <Member memberImg={this.state.img_luis} memberName={this.state.name_luis} memberTitle={this.state.titre_rayane} />
             </div>
           </div>
         </div>

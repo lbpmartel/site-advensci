@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Mission from './components/Mission';
+import Advantages from './components/Advantages';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Prizes from './components/Prizes';
@@ -39,6 +40,7 @@ class App extends Component {
                 <Header/>
                 {/* <Citation /> */}
                 <Mission />
+                <Advantages />
                 <Team />
                 <Model />
                 <Prizes />

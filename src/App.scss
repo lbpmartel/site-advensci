@@ -11,11 +11,64 @@ main {
         background-position: center center;
         background-size: 100%;
         background-repeat: no-repeat;
+        z-index: -1;
+
+        .header-text {
+            position: relative;
+            top: 100px;
+            padding: 50px;
+
+            h3 {
+                /* Style for "Advensci" */
+                color: #77caa5;
+                font-family: "K 2 D Medium";
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 34px;
+                /* Text style for "Advensci" */
+                letter-spacing: 0.12px;
+            }
+
+            p {
+                /* Style for "Une applic" */
+                width: 513px;
+                height: 117px;
+                color: #16475d;
+                font-family: "K 2 D Medium";
+                font-size: 23px;
+                font-weight: 500;
+                line-height: 35px;
+                text-transform: uppercase;
+                /* Text style for "Une applic" */
+                letter-spacing: 0.92px;
+            }
+
+            .header-rectangle {
+                width: 90%;
+                height: 50%;
+                background-color: white;
+                padding: 8%;
+            }
+        }
+
+        img {
+            position: relative;
+            top: 120px;
+        }
+
+
     }
+
     #mission {
         background: url("/img/2lay1.png");
         background-position: center center;
         background-size: 100%;
         background-repeat: no-repeat;
+        height: 700px;
+        //margin-top: -200px;
+
+        .row {
+            height: 100%;
+        }
     }
 }

@@ -12,7 +12,7 @@ class Mission extends React.Component {
             <a href="#inscription">Inscrivez-vous</a>
           </div>
           <div class="chercheurs col-lg-6">
-          <h3>Chercheurs</h3>
+            <h3>Chercheurs</h3>
             <h2 class="text-white">Êtes-vous à la recherche de participants pour une étude?</h2>
             <p>Accélérez votre recrutement en nous laissant vous présenter des participants motivés qui correspondent à vos critères.</p>
             <a href="#inscription">Inscrivez-vous</a>

@@ -12,18 +12,18 @@ class Advantages extends React.Component {
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="etudes col-lg-4">
+        <div id="advantages" class="row">
+          <div class="advantage etudes col-lg-4 text-left">
             <img src="/img/ico3.png" alt=""></img>
-            <p>Choisissez parmi différents types d’études disponibles</p>
+            <p class="text-left text-advantage">Choisissez parmi différents types d’études disponibles</p>
           </div>
-          <div class="rayon col-lg-4">
+          <div class="advantage rayon col-lg-4 text-left">
             <img src="/img/ico4.png" alt=""></img>
-            <p>Déterminer le rayon qui vous intéresse selon votre emplacement </p>
+            <p class="text-left text-advantage">Déterminer le rayon qui vous intéresse selon votre emplacement </p>
           </div>
-          <div class="compensation col-lg-4">
+          <div class="advantage compensation col-lg-4 text-left">
             <img src="/img/ico1.png" alt=""></img>
-            <p>Indiquez votre fourchette de compensation désirée et explorez vos options </p>
+            <p class="text-left text-advantage">Indiquez votre fourchette de compensation désirée et explorez vos options </p>
           </div>
         </div>
       </div>

@@ -55,8 +55,6 @@ main {
             position: relative;
             top: 120px;
         }
-
-
     }
 
     #mission {
@@ -71,4 +69,18 @@ main {
             height: 100%;
         }
     }
+
+    #advantages {
+        padding: 0% 8%;
+
+        .advantage {
+            padding: 10px;
+        }
+
+        .text-advantage {
+            padding-top: 28px;
+        }
+    }
+
+
 }

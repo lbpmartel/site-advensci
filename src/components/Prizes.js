@@ -18,7 +18,8 @@ class Prizes extends Component {
         <row>
           <div class="container-fluid prizes" id="prix">
             <div class="container">
-              <h1 className="title">Nos prix</h1>
+              <h3 className="prizes-subtitle">On parle de nous</h3>
+              <h1 className="prizes-title">Prix et mentions</h1>
               <div class="row">
                 <div class="col-sm-6 col-lg-4 border rounded shadow prize-container">
                   <div>

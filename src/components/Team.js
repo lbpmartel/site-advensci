@@ -26,16 +26,16 @@ class Team extends React.Component {
           <h3>Qui sommes-nous ?</h3>
           <h2>Une équipe multidisciplinaire</h2>
           <div class="row">
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3 col-md-6 m-3">
               <Member memberImg={this.state.img_rayane} memberName={this.state.name_rayane} memberTitle={this.state.titre_rayane} />
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3 col-md-6 m-3">
               <Member memberImg={this.state.img_guillaume} memberName={this.state.name_guillaume} memberTitle={this.state.titre_rayane} />
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3 col-md-6 m-3">
               <Member memberImg={this.state.img_louis} memberName={this.state.name_louis} memberTitle={this.state.titre_rayane} />
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3 col-md-6 m-3">
               <Member memberImg={this.state.img_luis} memberName={this.state.name_luis} memberTitle={this.state.titre_rayane} />
             </div>
           </div>

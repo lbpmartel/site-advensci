@@ -25,7 +25,7 @@ class Team extends React.Component {
         <div class="container">
           <h3>Qui sommes-nous ?</h3>
           <h2>Une équipe multidisciplinaire</h2>
-          <div class="row">
+          <div class="row membres">
             <div class="col-sm-6 col-lg-3 col-md-6 m-3">
               <Member memberImg={this.state.img_rayane} memberName={this.state.name_rayane} memberTitle={this.state.titre_rayane} />
             </div>

@@ -14,15 +14,15 @@ class Advantages extends React.Component {
         </div>
         <div id="advantages" class="row">
           <div class="advantage etudes col-lg-4 text-left">
-            <img src="/img/ico3.png" alt=""></img>
+            <img class="advantage-img" src="/img/ico3.png" alt=""></img>
             <p class="text-left text-advantage">Choisissez parmi différents types d’études disponibles</p>
           </div>
           <div class="advantage rayon col-lg-4 text-left">
-            <img src="/img/ico4.png" alt=""></img>
+            <img class="advantage-img" src="/img/ico4.png" alt=""></img>
             <p class="text-left text-advantage">Déterminer le rayon qui vous intéresse selon votre emplacement </p>
           </div>
           <div class="advantage compensation col-lg-4 text-left">
-            <img src="/img/ico1.png" alt=""></img>
+            <img class="advantage-img" src="/img/ico1.png" alt=""></img>
             <p class="text-left text-advantage">Indiquez votre fourchette de compensation désirée et explorez vos options </p>
           </div>
         </div>

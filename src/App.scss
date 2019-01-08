@@ -6,6 +6,23 @@
 @include font-face(open_sans, "/fonts/open-sans-v15-latin-700", 700, normal, eot woff2 woff ttf svg);
 
 main {
+    .navbar {
+        display: flex;
+        flex-flow: column;
+        min-height: 133px;
+        padding: 35px 10px;
+        .navbar-brand {
+            padding-top: 35px;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            max-height: 100%;
+        }
+    }
     .background-header {
         background: url("/img/bg_main.jpg");
         background-position: center center;

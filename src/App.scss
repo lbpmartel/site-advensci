@@ -12,6 +12,7 @@
 $gut : 50px;
 $html-fs : 15;
 $h3: $html-fs * 1.133+px;
+$green : #4da488;
 $turquoise : #15465b;
 main {
     .container {
@@ -24,10 +25,16 @@ main {
     html {
         font-size: $html-fs+px;
     }
+    h2 {
+        line-height: 1.4;
+    }
     h3 {
         font-size: $h3;
     }
-
+    h3, p, a {
+        color: $turquoise;
+        font-weight: 500 !important;
+    }
     .btn {
         border: 1px $turquoise solid;
         padding: 15px;
@@ -81,7 +88,6 @@ main {
         background-repeat: no-repeat;
         z-index: -1;
         padding-top: 133px;
-        margin-bottom: -11vw;
         .header-text {
             margin-top: $gut * 2;
             h3 {
@@ -123,14 +129,14 @@ main {
     }
 
     #mission {
-        margin-top: -12vw;
+        margin-top: -15vw;
         background: url("/img/2lay1.png");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
         height: 100%;
-        min-height: 30vw;
+        min-height: 34vw;
         padding: $gut;
         .row {
             height: 100%;
@@ -147,24 +153,45 @@ main {
                 padding-top: $gut * 2;
                 padding-bottom: 0;
             }
-            h3, p, a {
-                color: $turquoise;
-                font-weight: 500 !important;
-            }
         }
     }
 
     #advantages {
-        padding: 0% 8%;
-
-        .advantage {
-            padding: 10px;
+        .container {
+            &:first-child {
+                margin: $gut * 1.8 auto;
+                .row {
+                    max-width: 850px;
+                    margin:auto;
+                    .title{
+                        color: $green;
+                        font-weight: 300;
+                    }
+                }
+            }
+            &:last-child {
+                margin: $gut * 1.8 auto;
+                .row {
+                    max-width: 1049px;
+                    margin: auto;
+                }
+            }
         }
-
+        .advantage {
+            &:first-child {
+                
+            }
+            &:nth-child(2) {
+                
+            }
+            &:nth-child(3) {
+                
+            }
+        }
         .text-advantage {
             padding-top: 28px;
+            max-width: 185px;
         }
-
         .advantage-img {
             max-width: 61px;
             max-height: 61px;

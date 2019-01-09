@@ -10,14 +10,34 @@
 @include font-face(k2d, "/fonts/k2d-light-webfont", 300, normal, eot woff2 woff ttf svg);
 
 $gut : 50px;
-
+$html-fs : 15;
+$h3: $html-fs * 1.133+px;
+$turquoise : #15465b;
 main {
     .container {
         max-width: 1265px;
     }
     // Fonts
-    html, h1, h2, h3, h4, p {
+    html, h1, h2, h3, h4, a, p {
         font-family: "k2d", Arial, sans-serif;
+    }
+    html {
+        font-size: $html-fs+px;
+    }
+    h3 {
+        font-size: $h3;
+    }
+
+    .btn {
+        border: 1px $turquoise solid;
+        padding: 15px;
+        line-height: $html-fs+px;
+        font-size: $html-fs+px;
+        text-transform: uppercase;
+        &:hover {
+            background-color: adjust-hue($color: $turquoise, $degrees: 0);
+            color: white !important;
+        }
     }
     >* {
         -webkit-transition: all 0.5s ease-out;
@@ -61,6 +81,7 @@ main {
         background-repeat: no-repeat;
         z-index: -1;
         padding-top: 133px;
+        margin-bottom: -11vw;
         .header-text {
             margin-top: $gut * 2;
             h3 {
@@ -102,15 +123,34 @@ main {
     }
 
     #mission {
+        margin-top: -12vw;
         background: url("/img/2lay1.png");
         background-position: center center;
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
-        height: 700px;
-        //margin-top: -200px;
-
+        position: relative;
+        height: 100%;
+        min-height: 30vw;
+        padding: $gut;
         .row {
             height: 100%;
+            padding: $gut 0;
+            .participants {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            .participants, .chercheurs {
+                max-width: 455px;
+            }
+            .chercheurs {
+                margin-left: auto;
+                padding-top: $gut * 2;
+                padding-bottom: 0;
+            }
+            h3, p, a {
+                color: $turquoise;
+                font-weight: 500 !important;
+            }
         }
     }
 

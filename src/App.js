@@ -56,6 +56,7 @@ class App extends Component {
 }
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size and add white bg
+// Also, if the screen is too small, we add the responsive menu instead
 window.onscroll = function() {scrollFunction()};
 window.onload = function() {scrollFunction()};
 

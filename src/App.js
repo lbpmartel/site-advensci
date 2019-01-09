@@ -42,10 +42,12 @@ class App extends Component {
                 {/* <Citation /> */}
                 <Mission />
                 <Advantages />
-                <Team />
+                <div className="container-fluid bg-team-prize" id="bg-team-prize">
+                    <Team />
+                    <Contact />
+                </div>
                 <Prizes />
                 <Sponsors />
-                <Contact />
                 <Footer />
 
             </main>
@@ -55,9 +57,10 @@ class App extends Component {
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size and add white bg
 window.onscroll = function() {scrollFunction()};
+window.onload = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 || window.innerWidth < 1440) {
     document.getElementById("logo").style.height = "84px";
     document.getElementById("navbar").style.backgroundColor = "white";
     document.getElementById("navbar").style.height = "133px";

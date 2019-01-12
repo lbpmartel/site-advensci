@@ -1,8 +1,8 @@
 @import "_mixins";
 
 // Fonts
-@include font-face(abz, "/fonts/abeezee-italic-webfont", 400, normal, eot woff2 woff ttf svg);
-@include font-face(abz, "/fonts/abeezee-regular-webfont", 400, italic, eot woff2 woff ttf svg);
+@include font-face(abz, "/fonts/abeezee-regular-webfont", 400, normal, eot woff2 woff ttf svg);
+@include font-face(abz, "/fonts/abeezee-italic-webfont", 400, italic, eot woff2 woff ttf svg);
 @include font-face(k2d, "/fonts/k2d-bold-webfont", 700, normal, eot woff2 woff ttf svg);
 @include font-face(k2d, "/fonts/k2d-semibold-webfont", 600, normal, eot woff2 woff ttf svg);
 @include font-face(k2d, "/fonts/k2d-medium-webfont", 500, normal, eot woff2 woff ttf svg);
@@ -13,6 +13,7 @@ $gut : 50px;
 $html-fs : 15;
 $h3: $html-fs * 1.133+px;
 $green : #4da488;
+$light-green : #94e3b8;
 $turquoise : #15465b;
 main {
     .container {
@@ -268,6 +269,41 @@ main {
                         opacity: 1;
                         padding-top: $gut / 4;
                     }
+                }
+            }
+        }
+    }
+
+    #contact {
+        .title {
+            h2 {
+                color: $green;
+            }
+        }
+        .contact-forms {
+            background-color: $light-green;
+            nav {
+                .nav-tabs {
+                    border:none;
+                    .nav-item {
+                        text-transform: uppercase;
+                        max-width: 190px;
+                        padding-left:0;
+                        padding-right:0;
+                        border-radius: 3px;
+                        color: $turquoise;
+                        border: 1px solid $turquoise;
+                        letter-spacing: 0.88px;
+                    }
+                }
+            }
+            #participant {
+                h3 {
+                    font-family: abz;
+                    letter-spacing: 0.11px;
+                    max-width: 485px;
+                    text-align:center;
+                    margin: auto;
                 }
             }
         }

@@ -10,19 +10,19 @@ class Contact extends React.Component {
       <div class="container-fluid contact" id="contact">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 d-flex flex-column justify-content-center">
-              <div class="text m-auto">
+            <div class="col-lg-3 title d-flex flex-column justify-content-center">
+              <div class="text mx-auto mb-auto px-lg-5">
                 <h2>Intéressé ?</h2>
                 <h3>Inscrivez-vous aujourd'hui !</h3>
               </div>
             </div>
-            <div class="col-lg-8">
-              <nav class="nav nav-tabs col-12">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item">
+            <div class="col-lg-9 contact-forms">
+              <nav class="nav nav-tabs container">
+                <ul class="nav nav-tabs row w-100 d-flex py-5" id="myTab" role="tablist">
+                  <li class="nav-item col-lg-6 ml-auto text-center">
                     <a class="nav-link active" id="participant-tab" data-toggle="tab" href="#participant" role="tab" aria-controls="participant" aria-selected="true">Participant</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item col-lg-6 mr-auto text-center">
                     <a class="nav-link" id="chercheur-tab" data-toggle="tab" href="#chercheur" role="tab" aria-controls="chercheur" aria-selected="false">Chercheur</a>
                   </li>
                 </ul>

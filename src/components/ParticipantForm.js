@@ -66,7 +66,7 @@ class ParticipantForm extends Component {
                             <div id="mailchimp-antibot" aria-hidden="true" class="d-none">
                                 <input type="text" name="b_1459cc2a9b4681a90674626f5_5e9ddda649" tabindex="-1" value="" />
                             </div>
-                            <div class="clear">
+                            <div class="clear d-flex">
                                 <input type="submit" value="Inscrivez-moi" name="subscribe" id="mc-embedded-subscribe" class="button text-uppercase" />
                             </div>
                         </div>

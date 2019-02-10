@@ -8,6 +8,7 @@ import Prizes from './components/Prizes';
 import Model from './components/Model';
 import Footer from './components/Footer';
 import Sponsors from './components/Sponsors';
+import Social from './components/Social';
 import './App.scss';
 
 class App extends Component {
@@ -48,6 +49,7 @@ class App extends Component {
                 </div>
                 <Prizes />
                 <Sponsors />
+                <Social />
                 <Footer />
 
             </main>

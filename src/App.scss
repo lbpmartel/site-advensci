@@ -189,7 +189,7 @@ main {
 
     #bg-team-prize {
         background-image: url(/img/bg_semi.png), url(/img/logo-transparent.png);
-        background-position: left top, -13% 140%;
+        background-position: left top, -7vw 37vw;
         background-size: 100%, 818px 660px;
         background-repeat: no-repeat;
     }
@@ -308,6 +308,28 @@ main {
                             max-width: 760px;
                             margin: auto;
                         }
+                    }
+                    label {
+                        font-size: $html-fs+px;
+                        letter-spacing: 0.12px;
+                        color: $turquoise;
+                        font-family: abz, sans-serif;
+                    }
+                    input[type="text"], input[type="email"] {
+                        background-color: transparent;
+                        border:none;
+                        border-bottom:1px solid $turquoise;
+                        color: $turquoise;
+                        border-radius: 0;
+                    }
+                    input[type="submit"] {
+                        background-color: $turquoise;
+                        line-height: 53px;
+                        height: 55px;;
+                        border:none;
+                        border-radius: 3px;
+                        width: $gut*3.6;
+                        margin: $gut auto;
                     }
                 }
             }

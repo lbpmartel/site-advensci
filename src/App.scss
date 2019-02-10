@@ -15,54 +15,75 @@ $h3: $html-fs * 1.133+px;
 $green : #4da488;
 $light-green : #94e3b8;
 $turquoise : #15465b;
+
 main {
     .container {
         max-width: 1265px;
     }
+
     // Fonts
-    html, h1, h2, h3, h4, a, p {
+    html,
+    h1,
+    h2,
+    h3,
+    h4,
+    a,
+    p {
         font-family: "k2d", Arial, sans-serif;
     }
+
     html {
         font-size: $html-fs+px;
     }
+
     h2 {
         line-height: 1.4;
     }
+
     h3 {
         font-size: $h3;
     }
-    h3, p, a {
+
+    h3,
+    p,
+    a {
         color: $turquoise;
         font-weight: 500 !important;
     }
+
     .btn {
         border: 1px $turquoise solid;
         padding: 15px;
         line-height: $html-fs+px;
         font-size: $html-fs+px;
         text-transform: uppercase;
+
         &:hover {
             background-color: adjust-hue($color: $turquoise, $degrees: 0);
             color: white !important;
         }
     }
+
     >* {
         -webkit-transition: all 0.5s ease-out;
         -moz-transition: all 0.5s ease-out;
         -o-transition: all 0.5s ease-out;
         transition: all 0.5s ease-out;
     }
+
     .navbar {
         display: flex;
         flex-flow: column;
         min-height: 133px;
         padding: 35px 0 0;
+
         .container {
             min-height: 133px;
         }
+
         .navbar-collapse {
             margin-bottom: none;
+
             .nav-item {
                 .nav-link {
                     padding-left: 5px;
@@ -70,6 +91,7 @@ main {
                 }
             }
         }
+
         .navbar-brand {
             margin-top: 35px;
             justify-content: center;
@@ -82,6 +104,7 @@ main {
             max-height: 100%;
         }
     }
+
     .background-header {
         background: url("/img/bg_main.jpg");
         background-position: center center;
@@ -89,8 +112,10 @@ main {
         background-repeat: no-repeat;
         z-index: -1;
         padding-top: 6.5vw;
+
         .header-text {
             margin-top: $gut * 2;
+
             h3 {
                 /* Style for "Advensci" */
                 color: #77caa5;
@@ -119,6 +144,7 @@ main {
                 padding: 8%;
             }
         }
+
         .header-photo {
             img {
                 margin-left: 22%;
@@ -138,16 +164,21 @@ main {
         height: 100%;
         min-height: 34vw;
         padding: $gut;
+
         .row {
             height: 100%;
             padding: $gut 0;
+
             .participants {
                 padding-top: 0;
                 padding-bottom: 0;
             }
-            .participants, .chercheurs {
+
+            .participants,
+            .chercheurs {
                 max-width: 455px;
             }
+
             .chercheurs {
                 margin-left: auto;
                 padding-top: $gut * 2;
@@ -160,27 +191,33 @@ main {
         .container {
             &:first-child {
                 margin: $gut * 1.8 auto;
+
                 .row {
                     max-width: 850px;
-                    margin:auto;
-                    .title{
+                    margin: auto;
+
+                    .title {
                         color: $green;
                         font-weight: 300;
                     }
                 }
             }
+
             &:last-child {
                 margin: $gut * 1.8 auto;
+
                 .row {
                     max-width: 1049px;
                     margin: auto;
                 }
             }
         }
+
         .text-advantage {
             padding-top: 28px;
             max-width: 185px;
         }
+
         .advantage-img {
             max-width: 61px;
             max-height: 61px;
@@ -196,12 +233,14 @@ main {
 
     #team {
         padding: $gut * 1.3 0 $gut * 2.1 0;
+
         .title {
             h2 {
                 color: $green;
                 font-weight: 300;
             }
         }
+
         #member {
             width: 100%;
             position: relative;
@@ -210,6 +249,7 @@ main {
             max-height: 300px;
             overflow: hidden;
             margin: auto;
+
             &:before {
                 content: "";
                 background-image: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 70%) 100%);
@@ -219,14 +259,18 @@ main {
                 bottom: 0;
                 right: 0;
             }
-            h3, h4 {
+
+            h3,
+            h4 {
                 color: white;
                 font-size: $h3;
                 letter-spacing: 0.11;
             }
+
             h3 {
                 font-weight: 600;
             }
+
             h4 {
                 font-weight: 300;
             }
@@ -236,6 +280,7 @@ main {
                 bottom: 25px;
                 left: 30px;
                 transition: .3s ease;
+
                 .text {
                     opacity: 0;
                 }
@@ -263,8 +308,10 @@ main {
                     opacity: 1;
                     transform: translateY(-100%);
                 }
+
                 .bottom-left {
                     opacity: 0;
+
                     .text {
                         opacity: 1;
                         padding-top: $gut / 4;
@@ -280,16 +327,19 @@ main {
                 color: $green;
             }
         }
+
         .contact-forms {
             background-color: $light-green;
+
             nav {
                 .nav-tabs {
-                    border:none;
+                    border: none;
+
                     .nav-item {
                         text-transform: uppercase;
                         max-width: 190px;
-                        padding-left:0;
-                        padding-right:0;
+                        padding-left: 0;
+                        padding-right: 0;
                         border-radius: 3px;
                         color: $turquoise;
                         border: 1px solid $turquoise;
@@ -297,21 +347,62 @@ main {
                     }
                 }
             }
+
             #participant {
                 h3 {
                     font-family: abz;
                     letter-spacing: 0.11px;
                     max-width: 485px;
-                    text-align:center;
+                    text-align: center;
                     margin: auto;
+                }
+
+                .response {
+                    display: none;
+                }
+
+                .anti-bot {
+                    position: absolute;
+                    left: -5000px;
                 }
             }
         }
     }
 
-    #sponsors {
-        margin-top: 50px;
+
+    #prizes {
+        padding: $gut * 2.1 0 $gut * 1.3 0;
+
+        .prize {
+            padding-top: $gut * 1.3;
+
+            h3 {
+                font-family: abz;
+                font-size: 17px;
+                letter-spacing: 0.11px;
+                line-height: 34px;
+                width: 100%;
+                text-align: center
+            }
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            .list-prizes {
+                padding: $gut * 1.2 0;
+            }
+        }
     }
 
+    #sponsors {
+        padding: $gut * 1.3 0 $gut * 2.1 0;
 
+    }
+
+    #footer {
+        background-color: #94e3b8;
+    }
 }

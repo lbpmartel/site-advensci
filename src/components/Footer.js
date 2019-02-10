@@ -17,7 +17,7 @@ class Footer extends Component {
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                            <p>Tous droits réservés <i>Advensci</i></p>
+                            <p>Tous droits réservés <i>Advensci</i> {(new Date().getFullYear())}</p>
                         </div>
                         <hr />
                     </div>

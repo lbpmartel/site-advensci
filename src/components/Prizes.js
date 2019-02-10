@@ -15,19 +15,19 @@ class Prizes extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="container-fluid prizes" id="prizes">
         <row>
-          <div class="container prizes" id="prix">
+          <div className="container prizes">
             <h3 className="prizes-subtitle">On parle de nous</h3>
-            <h1 className="prizes-title">Prix et mentions</h1>
-            <div class="row">
-              <div class="col-sm-6 col-lg-4 rounded prize-container">
+            <h2 className="prizes-title">Prix et mentions</h2>
+            <div className="row list-prizes">
+              <div class="col-sm-6 col-lg-4  prize-container">
                 <Prize prizeImg={this.state.img_explorez} prizeTitle={this.state.title_explorez} />
               </div>
-              <div class="col-sm-6 col-lg-4 rounded prize-container">
+              <div class="col-sm-6 col-lg-4  prize-container">
                 <Prize prizeImg={this.state.img_esquissez} prizeTitle={this.state.title_esquissez} />
               </div>
-              <div class="col-sm-6 col-lg-4 rounded prize-container">
+              <div class="col-sm-6 col-lg-4  prize-container">
                 <Prize prizeImg={this.state.img_concretisez} prizeTitle={this.state.title_concretisez} />
               </div>
             </div>

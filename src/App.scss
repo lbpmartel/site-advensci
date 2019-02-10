@@ -399,15 +399,6 @@ main {
                     text-align: center;
                     margin: auto;
                 }
-
-                .response {
-                    display: none;
-                }
-
-                .anti-bot {
-                    position: absolute;
-                    left: -5000px;
-                }
             }
         }
     }
@@ -478,6 +469,14 @@ main {
                 }
             }
         }
+    }
 
+    .response {
+        display: none;
+    }
+
+    .anti-bot {
+        position: absolute;
+        left: -5000px;
     }
 }

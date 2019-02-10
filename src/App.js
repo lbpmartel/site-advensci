@@ -6,6 +6,7 @@ import Team from './components/Team';
 import Contact from './components/Contact';
 import Prizes from './components/Prizes';
 import Sponsors from './components/Sponsors';
+import Social from './components/Social';
 import './App.scss';
 
 class App extends Component {
@@ -45,6 +46,8 @@ class App extends Component {
                 </div>
                 <Prizes />
                 <Sponsors />
+                <Social />
+
             </main>
         );
     }

@@ -7,8 +7,7 @@ class Social extends Component {
                 <section id="social" className="container-fluid">
                     <div class="row">
                         <div class="col-lg-6">
-                        <script async src="https://platform.twitter.com/widgets.js"></script>
-                        <a class="twitter-timeline" href="https://twitter.com/TwitterDev">Tweet</a>
+                        <a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
                         </div>
                         <hr />
                     </div>

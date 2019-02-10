@@ -399,15 +399,6 @@ main {
                     text-align: center;
                     margin: auto;
                 }
-
-                .response {
-                    display: none;
-                }
-
-                .anti-bot {
-                    position: absolute;
-                    left: -5000px;
-                }
             }
         }
     }
@@ -454,6 +445,14 @@ main {
             background: white;
             float: left;
         }
+    }
 
+    .response {
+        display: none;
+    }
+
+    .anti-bot {
+        position: absolute;
+        left: -5000px;
     }
 }

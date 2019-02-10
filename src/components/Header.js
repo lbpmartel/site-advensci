@@ -13,7 +13,7 @@ class Header extends React.Component {
                             </div>
                         </div>
                         <div class="header-photo col-lg-6 d-flex">
-                            <img src="/img/phone.png" alt=""></img>
+                            <img src="/img/nexus_resized.png" alt=""></img>
                         </div>
                     </div>
                 </div>

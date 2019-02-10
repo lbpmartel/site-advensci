@@ -20,10 +20,10 @@ class Contact extends React.Component {
               <nav class="nav nav-tabs container">
                 <ul class="nav nav-tabs row w-100 d-flex py-5" id="myTab" role="tablist">
                   <li class="nav-item col-lg-6 ml-auto text-center">
-                    <a class="nav-link active" id="participant-tab" data-toggle="tab" href="#participant" role="tab" aria-controls="participant" aria-selected="true">Participant</a>
+                    <a class="nav-link active" id="participant-tab" data-toggle="tab" href="#participant" role="tab" aria-controls="participant" aria-selected="true">Participants</a>
                   </li>
                   <li class="nav-item col-lg-6 mr-auto text-center">
-                    <a class="nav-link" id="chercheur-tab" data-toggle="tab" href="#chercheur" role="tab" aria-controls="chercheur" aria-selected="false">Chercheur</a>
+                    <a class="nav-link" id="chercheur-tab" data-toggle="tab" href="#chercheur" role="tab" aria-controls="chercheur" aria-selected="false">Chercheurs</a>
                   </li>
                 </ul>
                 <div class="tab-content col-12" id="myTabContent">

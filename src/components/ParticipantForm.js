@@ -63,11 +63,11 @@ class ParticipantForm extends Component {
                                 <div class="response" id="mce-error-response"></div>
                                 <div class="response" id="mce-success-response"></div>
                             </div>
-                            <div id="mailchimp-antibot" aria-hidden="true">
+                            <div id="mailchimp-antibot" aria-hidden="true" class="d-none">
                                 <input type="text" name="b_1459cc2a9b4681a90674626f5_5e9ddda649" tabindex="-1" value="" />
                             </div>
                             <div class="clear">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
+                                <input type="submit" value="Inscrivez-moi" name="subscribe" id="mc-embedded-subscribe" class="button text-uppercase" />
                             </div>
                         </div>
                     </form>

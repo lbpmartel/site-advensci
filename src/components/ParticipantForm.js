@@ -46,7 +46,7 @@ class ParticipantForm extends Component {
                                 name="LNAME"
                                 className="required"
                                 id="mce-LNAME"
-                                onChange={(e) => { this.setState({ lNameValue: e.target.value }); }} /> />
+                                onChange={(e) => { this.setState({ lNameValue: e.target.value }); }} />
                         </div>
                         <div className="mc-field-group size1of2">
                             <label for="mce-MMERGE5-month">Date de naissance </label>

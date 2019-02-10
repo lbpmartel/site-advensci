@@ -5,7 +5,6 @@ import Advantages from './components/Advantages';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Prizes from './components/Prizes';
-import Footer from './components/Footer';
 import Sponsors from './components/Sponsors';
 import './App.scss';
 
@@ -46,8 +45,6 @@ class App extends Component {
                 </div>
                 <Prizes />
                 <Sponsors />
-                <Footer />
-
             </main>
         );
     }

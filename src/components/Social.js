@@ -12,14 +12,14 @@ class Social extends Component {
 
                   <hr />
 
-                  <div className="col-lg-6">
-                     <iframe className="facebook-timeline" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fadvensci.inc&width=600&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435" scrolling="yes" frameborder="0" allowtransparency="true"></iframe>
-                  </div>
-               </div>
-            </section >
-         </div >
-      )
-   }
+                        <div className="col-lg-6 col-sm-12 mx-auto d-flex" id="facebook_div">
+                            <div className="fb-page facebook-timeline mx-auto" data-href="http://www.facebook.com/advensci.inc" data-width="500" data-height="630" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"></div>
+                        </div>
+                    </div>
+                </section >
+            </div >
+        )
+    }
 }
 
 export default Social;

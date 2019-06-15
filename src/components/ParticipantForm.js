@@ -16,9 +16,101 @@ class ParticipantForm extends Component {
 
    }
 
+   onFieldChange = (event) => {
+      if (event.target.type === 'checkbox') {
+         this.setState({
+            [event.target.name]: event.target.checked
+         });
+      } else {
+         this.setState({
+            [event.target.name]: event.target.value
+         });
+      }
+   };
 
    render() {
       return (
+         <div id="mc_embed_signup">
+            <form action="https://advensci.us19.list-manage.com/subscribe/post?u=1459cc2a9b4681a90674626f5&amp;id=5e9ddda649" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+               <div id="mc_embed_signup_scroll">
+                  <div class="indicates-required"><span class="asterisk">*</span> champs requis</div>
+                  <div class="mc-field-group">
+                     <label for="mce-FNAME">Prénom  <span class="asterisk">*</span>
+                     </label>
+                     <input type="text" name="FNAME" class="required" id="mce-FNAME" />
+                  </div>
+                  <div class="mc-field-group">
+                     <label for="mce-LNAME">Nom  <span class="asterisk">*</span>
+                     </label>
+                     <input type="text" name="LNAME" class="required" id="mce-LNAME" />
+                  </div>
+                  <div class="mc-field-group size1of2">
+                     <label for="mce-MMERGE5-month">Date de naissance </label>
+                     <div class="datefield">
+                        <span class="subfield dayfield">
+                           <input class="datepart " type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="MMERGE5[day]" id="mce-MMERGE5-day" />
+                        </span> /
+                        <span class="subfield monthfield">
+                           <input class="datepart " type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="MMERGE5[month]" id="mce-MMERGE5-month" />
+                        </span> /
+		                     <span class="subfield yearfield">
+                           <input class="datepart " type="text" pattern="[0-9]*" placeholder="YYYY" size="4" maxlength="4" name="MMERGE5[year]" id="mce-MMERGE5-year" />
+                        </span>
+                        <span class="small-meta nowrap">( dd / mm / yyyy )</span>
+                     </div>
+                  </div>
+                  <div class="mc-field-group">
+                     <label for="mce-EMAIL">Adresse courriel  <span class="asterisk">*</span>
+                     </label>
+                     <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" />
+                  </div>
+                  <div class="mc-field-group">
+                     <label for="mce-MMERGE4">Genre </label>
+                     <select name="MMERGE4" class="" id="mce-MMERGE4">
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                        <option value="Non-binaire">Non-binaire</option>
+                        <option value="Autre">Autre</option>
+
+                     </select>
+                  </div>
+                  <div class="mc-field-group">
+                     <label for="mce-MMERGE6">Pays de résidence </label>
+                     <input type="text" name="MMERGE6" class="" id="mce-MMERGE6" />
+                  </div>
+                  <div class="mc-field-group">
+                     <label for="mce-MMERGE7">Ville de résidence </label>
+                     <input type="text" name="MMERGE7" class="" id="mce-MMERGE7" />
+                  </div>
+                  <div class="mc-field-group">
+                     <label for="mce-MMERGE8">Quartier ou arrondissement </label>
+                     <input type="text" name="MMERGE8" class="" id="mce-MMERGE8" />
+                  </div>
+                  <div class="mc-field-group">
+                     <label for="mce-MMERGE3">Y a-t-il d'autres informations que vous voudriez </label>
+                     <input type="text" name="MMERGE3" class="" id="mce-MMERGE3" />
+                  </div>
+                  <div class="mc-field-group input-group">
+                     <ul><li><input type="checkbox" value="1" name="group[2915][1]" id="mce-group[2915]-2915-0" />
+                        <label for="mce-group[2915]-2915-0">
+                           Je souhaite être contacté lorsqu’une étude correspond à mon profil même avant le lancement de l’application.
+                        </label></li>
+                     </ul>
+                  </div>
+                  <div id="mce-responses" class="clear">
+                     <div class="response" id="mce-error-response" ></div>
+                     <div class="response" id="mce-success-response" ></div>
+                  </div>
+                  <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="b_1459cc2a9b4681a90674626f5_5e9ddda649" tabindex="-1" value="" />
+                  </div>
+                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
+                  </div>
+               </div>
+            </form>
+         </div>
+
+
+         /*
          <div id="mc_embed_signup">
             <h3>Inscrivez vous dès maintenant et soyez les premier à obtenir l’application.</h3>
             <form action="https://advensci.us19.list-manage.com/subscribe/post?u=1459cc2a9b4681a90674626f5&amp;id=5e9ddda649" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
@@ -27,42 +119,42 @@ class ParticipantForm extends Component {
                <div id="mc_embed_signup_scroll">
                   <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
                   <div className="mc-field-group">
-                     <label htmlFor="mce-FNAME">Prénom  <span className="asterisk">*</span>
+                     <label htmlhtmlFor="mce-FNAME">Prénom  <span className="asterisk">*</span>
                      </label>
                      <input
                         type="text"
-                        value={ this.state.fNameValue }
+                        value={this.state.fNameValue}
                         name="FNAME"
                         className="required"
                         id="mce-FNAME"
-                        onChange={ (e) => { this.setState({ fNameValue: e.target.value }); } } />
+                        onChange={(e) => { this.setState({ fNameValue: e.target.value }); }} />
                   </div>
                   <div className="mc-field-group">
-                     <label htmlFor="mce-LNAME">Nom  <span className="asterisk">*</span>
+                     <label htmlhtmlFor="mce-LNAME">Nom  <span className="asterisk">*</span>
                      </label>
                      <input
                         type="text"
-                        value={ this.state.lNameValue }
+                        value={this.state.lNameValue}
                         name="LNAME"
                         className="required"
                         id="mce-LNAME"
-                        onChange={ (e) => { this.setState({ lNameValue: e.target.value }); } } />
+                        onChange={(e) => { this.setState({ lNameValue: e.target.value }); }} />
                   </div>
                   <div className="mc-field-group size1of2">
-                     <label htmlFor="mce-MMERGE5-month">Date de naissance </label>
+                     <label htmlhtmlFor="mce-MMERGE5-month">Date de naissance </label>
                      <div className="datefield">
                         <span className="subfield monthfield">
                            <input
                               className="datepart "
                               type="text"
                               pattern="[0-9]*"
-                              value={ this.state.ddBdayValue }
+                              value={this.state.ddBdayValue}
                               placeholder="MM"
                               size="2"
                               maxLength="2"
                               name="MMERGE5[month]"
                               id="mce-MMERGE5-month"
-                              onChange={ (e) => { this.setState({ ddBdayValue: e.target.value }); } }
+                              onChange={(e) => { this.setState({ ddBdayValue: e.target.value }); }}
                            />
                         </span>
                         <span className="subfield dayfield">
@@ -70,13 +162,13 @@ class ParticipantForm extends Component {
                               className="datepart "
                               type="text"
                               pattern="[0-9]*"
-                              value={ this.state.mmBdayValue }
+                              value={this.state.mmBdayValue}
                               placeholder="DD"
                               size="2"
                               maxLength="2"
                               name="MMERGE5[day]"
                               id="mce-MMERGE5-day"
-                              onChange={ (e) => { this.setState({ mmBdayValue: e.target.value }); } }
+                              onChange={(e) => { this.setState({ mmBdayValue: e.target.value }); }}
                            />
                         </span>
                         <span className="subfield yearfield">
@@ -84,39 +176,39 @@ class ParticipantForm extends Component {
                               className="datepart "
                               type="text"
                               pattern="[0-9]*"
-                              value={ this.state.yyyyBdayValue }
+                              value={this.state.yyyyBdayValue}
                               placeholder="YYYY"
                               size="4"
                               maxLength="4"
                               name="MMERGE5[year]"
                               id="mce-MMERGE5-year"
-                              onChange={ (e) => { this.setState({ yyyyBdayValue: e.target.value }); } }
+                              onChange={(e) => { this.setState({ yyyyBdayValue: e.target.value }); }}
                            />
                         </span>
                         <span className="small-meta nowrap">( mm / dd / yyyy )</span>
                      </div>
                   </div>
                   <div className="mc-field-group">
-                     <label htmlFor="mce-EMAIL">Courriel  <span className="asterisk">*</span>
+                     <label htmlhtmlFor="mce-EMAIL">Courriel  <span className="asterisk">*</span>
                      </label>
                      <input
                         type="email"
-                        value={ this.state.emailValue }
+                        value={this.state.emailValue}
                         name="EMAIL"
                         className="required email"
                         id="mce-EMAIL"
-                        onChange={ (e) => { this.setState({ emailValue: e.target.value }); } }
+                        onChange={(e) => { this.setState({ emailValue: e.target.value }); }}
 
                      />
                   </div>
                   <div className="mc-field-group">
-                     <label htmlFor="mce-MMERGE4">Genre </label>
+                     <label htmlhtmlFor="mce-MMERGE4">Genre </label>
                      <select
                         name="MMERGE4"
                         className=""
                         id="mce-MMERGE4"
-                        value={ this.state.genderValue }
-                        onChange={ (e) => { this.setState({ genderValue: e.target.value }); } }>
+                        value={this.state.genderValue}
+                        onChange={(e) => { this.setState({ genderValue: e.target.value }); }}>
                         <option value=""></option>
                         <option value="Homme">Homme</option>
                         <option value="Femme">Femme</option>
@@ -125,9 +217,9 @@ class ParticipantForm extends Component {
                      </select>
                   </div>
                   <div className="mc-field-group">
-                     <label htmlFor="mce-MMERGE3">Y a-t-il d'autres informations que vous souhaitez partager avec nous? </label>
-                     <input type="text" value={ this.state.otherInfoValue } placeholder="ex: conditions médicales qui pourraient être étudiées, limitations que vous souhaitez partager, etc." name="MMERGE3" className="" id="mce-MMERGE3"
-                        onChange={ (e) => { this.setState({ otherInfoValue: e.target.value }); } } />
+                     <label htmlhtmlFor="mce-MMERGE3">Y a-t-il d'autres informations que vous souhaitez partager avec nous? </label>
+                     <input type="text" value={this.state.otherInfoValue} placeholder="ex: conditions médicales qui pourraient être étudiées, limitations que vous souhaitez partager, etc." name="MMERGE3" className="" id="mce-MMERGE3"
+                        onChange={(e) => { this.setState({ otherInfoValue: e.target.value }); }} />
                   </div>
                   <div id="mce-responses" className="clear">
                      <div className="response" id="mce-error-response" ></div>
@@ -138,6 +230,7 @@ class ParticipantForm extends Component {
                </div>
             </form>
          </div>
+ */
 
 
 
@@ -155,7 +248,7 @@ class ParticipantForm extends Component {
 
                          <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
                          <div className="mc-field-group">
-                             <label for="mce-FNAME">Prénom  <span className="asterisk">*</span>
+                             <label htmlFor="mce-FNAME">Prénom  <span className="asterisk">*</span>
                              </label>
                              <input
                                  type="text"
@@ -167,7 +260,7 @@ class ParticipantForm extends Component {
                              />
                          </div>
                          <div className="mc-field-group">
-                             <label for="mce-LNAME">Nom  <span className="asterisk">*</span>
+                             <label htmlFor="mce-LNAME">Nom  <span className="asterisk">*</span>
                              </label>
                              <input
                                  type="text"
@@ -179,7 +272,7 @@ class ParticipantForm extends Component {
                              />
                          </div>
                          <div className="mc-field-group">
-                             <label for="mce-EMAIL">Adresse courriel  <span className="asterisk">*</span>
+                             <label htmlFor="mce-EMAIL">Adresse courriel  <span className="asterisk">*</span>
                              </label>
                              <input
                                  type="email"

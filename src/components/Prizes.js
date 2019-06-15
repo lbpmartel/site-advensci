@@ -16,7 +16,6 @@ class Prizes extends Component {
   render() {
     return (
       <div className="container-fluid prizes" id="prizes">
-        <row>
           <div className="container prizes">
             <div className="row">
               <div className="col text-center">
@@ -25,18 +24,17 @@ class Prizes extends Component {
               </div>
             </div>
             <div className="row list-prizes">
-              <div class="col-sm-6 col-lg-4  prize-container">
+              <div className="col-sm-6 col-lg-4  prize-container">
                 <Prize prizeImg={this.state.img_explorez} prizeTitle={this.state.title_explorez} />
               </div>
-              <div class="col-sm-6 col-lg-4  prize-container">
+              <div className="col-sm-6 col-lg-4  prize-container">
                 <Prize prizeImg={this.state.img_esquissez} prizeTitle={this.state.title_esquissez} />
               </div>
-              <div class="col-sm-6 col-lg-4  prize-container">
+              <div className="col-sm-6 col-lg-4  prize-container">
                 <Prize prizeImg={this.state.img_concretisez} prizeTitle={this.state.title_concretisez} />
               </div>
             </div>
           </div>
-        </row>
       </div>
     )
   }

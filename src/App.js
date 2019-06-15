@@ -41,9 +41,9 @@ class App extends Component {
 
                   <div className="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                            <a className="nav-link" href="mailto:info@advensci.ca"><img src="img/ma.png" alt=""></img></a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                            <a className="nav-link" href="https://facebook.com/advensci.inc"><img src="img/fa.png" alt=""></img></a>
                         </li>

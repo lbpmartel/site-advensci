@@ -18,8 +18,12 @@ class Prizes extends Component {
       <div className="container-fluid prizes" id="prizes">
         <row>
           <div className="container prizes">
-            <h3 className="prizes-subtitle">On parle de nous</h3>
-            <h2 className="prizes-title">Prix et mentions</h2>
+            <div className="row">
+              <div className="col text-center">
+                <h3 className="prizes-subtitle">On parle de nous</h3>
+                <h2 className="prizes-title">Prix et mentions</h2>
+              </div>
+            </div>
             <div className="row list-prizes">
               <div class="col-sm-6 col-lg-4  prize-container">
                 <Prize prizeImg={this.state.img_explorez} prizeTitle={this.state.title_explorez} />

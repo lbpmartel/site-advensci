@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Header from './components/Header';
 import Mission from './components/Mission';
 import Advantages from './components/Advantages';
@@ -7,9 +8,34 @@ import Contact from './components/Contact';
 import Prizes from './components/Prizes';
 import Sponsors from './components/Sponsors';
 import Social from './components/Social';
+
 import './App.scss';
 
+import jsonData from './texts.json';
+
 class App extends Component {
+   constructor(props) {
+      super(props)
+      var data = JSON.parse(JSON.stringify(jsonData));
+      this.state = {
+         translationTexts: data
+      }
+      //this.loadJson();
+   }
+
+   componentDidMount() {
+      scrollFunction();
+   }
+
+   loadJson() {
+      var data = JSON.parse(JSON.stringify(jsonData));
+
+      this.setState({
+         translationTexts: data
+      });
+   }
+
+
    render() {
       return (
          <main>
@@ -41,7 +67,9 @@ class App extends Component {
             <Mission />
             <Advantages />
             <div className="container-fluid bg-team-prize" id="bg-team-prize">
-               <Team />
+               <Team texts={
+                  this.state.translationTexts
+               } />
                <Contact />
             </div>
             <Prizes />

@@ -1,6 +1,8 @@
 import React from 'react';
 import Member from './Member';
 
+import Translation from './Translation';
+
 class Team extends React.Component {
   constructor(props) {
     super(props);
@@ -13,7 +15,7 @@ class Team extends React.Component {
       titre_guillaume: "Cofondateur",
       titre_louis: "Développeur",
       titre_luis: "Directeur technique",
-      desc_rayane: "En tant qu’étudiante chercheuse au Ph.D. en neuropsychologie, Rayane a réalisé que le recrutement de participantes aux études est un des plus grands défis en recherche, ce qui a donné naissance à l’idée. Elle dirige l'équipe avec une vision qui veut briser les barrières entre le monde la recherche et la population.",
+      desc_rayane: "En tant qu’étudiante chercheuse au Ph.D. en neuropsychologie, Rayane a réalisé que le recrutement de participantes aux études est un des plus grands défis en recherche, ce qui a donné naissance à l’idée.",
       desc_guillaume: "Guillaume est détenteur d’un baccalauréat en sciences économiques et manager d’une branche de technologie de l’information dans une firme de consultation. Il a co-fondé Advensci et agit comme directeur des finances. ",
       desc_louis: "Louis est étudiant en informatique à l'Université du Québec à Montréal. Passionné par les projets innovants et le monde des start-ups, il donne son 100% pour traduire un projet de société en code.",
       desc_luis: "Étudiant en informatique à l’Université du Québec à Montréal, Luis agira comme directeur technique. De par son expérience en développement et en entreprenariat, il saura guider notre équipe.",
@@ -25,24 +27,28 @@ class Team extends React.Component {
   }
   render() {
     return (
-      <div class="container team" id="team">
-        <div class="row title">
-          <div class="col">
+      <div className="container team" id="team">
+        <div className="row title">
+          <div className="col">
             <h3>Qui sommes-nous ?</h3>
             <h2>Une équipe multidisciplinaire</h2>
           </div>
         </div>
-        <div class="row membres">
-          <div class="col-sm-6 col-lg-3 col-md-6 pb-3 pb-lg-0">
-            <Member memberImg={this.state.img_rayane} memberName={this.state.name_rayane} memberTitle={this.state.titre_rayane} memberDesc={this.state.desc_rayane} />
+        <div className="row membres">
+          <div className="col-sm-6 col-lg-3 col-md-6 pb-3 pb-lg-0">
+            <Member
+              memberImg={this.state.img_rayane}
+              memberName={this.state.name_rayane}
+              memberTitle={<Translation texts={this.props.texts} langage={"fr"} cle={"titre_rayane"} />}
+              memberDesc={this.state.desc_rayane} />
           </div>
-          <div class="col-sm-6 col-lg-3 col-md-6 pb-3 pb-lg-0">
+          <div className="col-sm-6 col-lg-3 col-md-6 pb-3 pb-lg-0">
             <Member memberImg={this.state.img_guillaume} memberName={this.state.name_guillaume} memberTitle={this.state.titre_guillaume} memberDesc={this.state.desc_guillaume} />
           </div>
-          <div class="col-sm-6 col-lg-3 col-md-6 pb-3 pb-lg-0">
+          <div className="col-sm-6 col-lg-3 col-md-6 pb-3 pb-lg-0">
             <Member memberImg={this.state.img_louis} memberName={this.state.name_louis} memberTitle={this.state.titre_louis} memberDesc={this.state.desc_louis} />
           </div>
-          <div class="col-sm-6 col-lg-3 col-md-6 pb-3 pb-lg-0">
+          <div className="col-sm-6 col-lg-3 col-md-6 pb-3 pb-lg-0">
             <Member memberImg={this.state.img_luis} memberName={this.state.name_luis} memberTitle={this.state.titre_luis} memberDesc={this.state.desc_luis} />
           </div>
         </div>

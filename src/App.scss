@@ -19,7 +19,9 @@ $turquoise: #15465b;
 main {
    .container {
       max-width: 1265px;
-   } // Fonts
+   }
+
+   // Fonts
    html,
    h1,
    h2,
@@ -326,11 +328,13 @@ main {
             color: $green;
          }
       }
+
       .size1of2 {
          display: block;
          float: none;
          width: auto;
       }
+
       .contact-forms {
          background-color: $light-green;
 
@@ -395,6 +399,16 @@ main {
          }
 
          #participant {
+            h3 {
+               font-family: abz, sans-serif;
+               letter-spacing: 0.11px;
+               max-width: 485px;
+               text-align: center;
+               margin: auto;
+            }
+         }
+
+         #chercheur {
             h3 {
                font-family: abz, sans-serif;
                letter-spacing: 0.11px;

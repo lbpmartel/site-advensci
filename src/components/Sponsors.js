@@ -7,18 +7,18 @@ class Sponsors extends React.Component {
             <div className="container-fluid team" id="sponsors">
                 <div className="container">
                     <div className="row">
-                        <div className="col">
-                            <h2 className="text-center">Avec le soutien de...</h2>
+                        <div className="col text-center">
+                            <h2>Avec le soutien de...</h2>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-6 d-flex">
-                            <div className="mr-auto">
+                        <div className="col-lg-6 d-flex pt-lg-5 pl-lg-5 mt-4">
+                            <div className="mr-auto pl-lg-5">
                                 <img className="sponsor-img" src="/img/sponsor1.png" alt=" " />
                             </div>
                         </div>
-                        <div className="col-lg-6 d-flex">
-                            <div className="ml-auto">
+                        <div className="col-lg-6 d-flex pt-lg-5 pr-lg-5 mt-4">
+                            <div className="ml-auto pr-lg-5">
                                 <img className="sponsor-img" src="/img/sponsor2.jpg" alt=" " />
                             </div>
                         </div>

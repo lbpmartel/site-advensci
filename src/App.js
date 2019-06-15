@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Prizes from './components/Prizes';
 import Sponsors from './components/Sponsors';
 import Social from './components/Social';
+import Footer from './components/Footer';
 
 import './App.scss';
 
@@ -20,21 +21,11 @@ class App extends Component {
       this.state = {
          translationTexts: data
       }
-      //this.loadJson();
    }
 
    componentDidMount() {
       scrollFunction();
    }
-
-   loadJson() {
-      var data = JSON.parse(JSON.stringify(jsonData));
-
-      this.setState({
-         translationTexts: data
-      });
-   }
-
 
    render() {
       return (
@@ -75,7 +66,7 @@ class App extends Component {
             <Prizes />
             <Sponsors />
             <Social />
-
+            <Footer />
          </main>
       );
    }

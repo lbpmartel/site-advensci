@@ -65,29 +65,31 @@ class ParticipantForm extends Component {
                      <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" />
                   </div>
                   <div className="mc-field-group">
-                     <label htmlFor="mce-MMERGE4">Genre <span className="asterisk">*</span></label>
+                     <label htmlFor="mce-MMERGE4">Genre auquel vous vous identifiez le plus<span className="asterisk">*</span></label>
                      <select name="MMERGE4" className="" id="mce-MMERGE4">
-                        <option value="Homme">Homme</option>
-                        <option value="Femme">Femme</option>
+                        <option value="Homme">Homme cis</option>
+                        <option value="Femme">Femme cis</option>
+                        <option value="Homme">Homme trans</option>
+                        <option value="Femme">Femme trans</option>
                         <option value="Non-binaire">Non-binaire</option>
                         <option value="Autre">Autre</option>
                      </select>
                   </div>
                   <div className="mc-field-group">
-                     <label htmlFor="mce-MMERGE6">Pays de résidence <span className="asterisk">*</span></label>
+                     <label htmlFor="mce-MMERGE6">Pays <span className="asterisk">*</span></label>
                      <input type="text" name="MMERGE6" className="" id="mce-MMERGE6" />
                   </div>
                   <div className="mc-field-group">
-                     <label htmlFor="mce-MMERGE7">Ville de résidence <span className="asterisk">*</span></label>
+                     <label htmlFor="mce-MMERGE7">Ville <span className="asterisk">*</span></label>
                      <input type="text" name="MMERGE7" className="" id="mce-MMERGE7" />
                   </div>
                   <div className="mc-field-group">
                      <label htmlFor="mce-MMERGE8">Quartier ou arrondissement </label>
-                     <input type="text" name="MMERGE8" className="" id="mce-MMERGE8" />
+                     <input type="text" name="MMERGE8" className="" id="mce-MMERGE8" placeholder="Quartiers ou arrondissements où vous pouvez vous déplacer pour participer à une étude " />
                   </div>
                   <div className="mc-field-group">
-                     <label htmlFor="mce-MMERGE3">Y a-t-il d'autres informations que vous voudriez partager avec nous ?</label>
-                     <input type="text" name="MMERGE3" className="" id="mce-MMERGE3" />
+                     <label htmlFor="mce-MMERGE3">Autres informations</label>
+                     <input type="text" name="MMERGE3" className="" id="mce-MMERGE3" placeholder="Y a-t-il d'autres informations que vous voudriez partager avec nous ?" />
                   </div>
                   <div className="mc-field-group input-group">
                      <ul><li><input type="checkbox" defaultValue="1" name="group[2915][1]" id="mce-group[2915]-2915-0" />

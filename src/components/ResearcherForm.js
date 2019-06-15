@@ -73,7 +73,6 @@ class ResearcherForm extends Component {
                                     <input className="phonepart " pattern="[0-9]*" id="mce-MMERGE6-detail1" name="MMERGE6[detail1]" maxLength="3" size="3" type="text" onChange={this.onFieldChange} /></span> -
                               <span className="phonedetail2">
                                     <input className="phonepart " pattern="[0-9]*" id="mce-MMERGE6-detail2" name="MMERGE6[detail2]" maxLength="4" size="4" type="text" onChange={this.onFieldChange} /></span>
-                                <span className="small-meta nowrap">(###) ###-####</span>
                             </div>
                         </div><div className="mc-field-group">
                             <label htmlFor="mce-FUNCTION">Fonction <span className="asterisk">*</span></label>
@@ -96,15 +95,15 @@ class ResearcherForm extends Component {
                             <input type="text" name="UNI_LAB" className="" id="mce-UNI_LAB" onChange={this.onFieldChange} />
                         </div>
                         <div className="mc-field-group size1of2">
-                            <label htmlFor="mce-MMERGE5">De combien de participants pensez-vous avoir besoin? <span className="asterisk">*</span></label>
-                            <input type="number" name="MMERGE5" className="" id="mce-MMERGE5" onChange={this.onFieldChange} />
+                            <label htmlFor="mce-MMERGE5">Nombre de participants <span className="asterisk">*</span></label>
+                            <input type="number" name="MMERGE5" className="" id="mce-MMERGE5" placeholder="De combien de participants pensez-vous avoir besoin?" onChange={this.onFieldChange} />
                         </div>
                         <div className="mc-field-group">
-                            <label htmlFor="mce-MMERGE7">Critères d'inclusion (âge et type de population que vous voulez étudier) <span className="asterisk">*</span></label>
-                            <input type="text" name="MMERGE7" className="" id="mce-MMERGE7" onChange={this.onFieldChange} />
+                            <label htmlFor="mce-MMERGE7">Critères d'inclusion <span className="asterisk">*</span></label>
+                            <input type="text" name="MMERGE7" className="" id="mce-MMERGE7" placeholder="Âge et type de population que vous voulez étudier" onChange={this.onFieldChange} />
                         </div>
                         <div className="mc-field-group">
-                            <label htmlFor="mce-MMERGE8">Critères d'exclusion <span className="asterisk">*</span></label>
+                            <label htmlFor="mce-MMERGE8">Critères d'exclusion </label>
                             <input type="text" name="MMERGE8" className="" id="mce-MMERGE8" onChange={this.onFieldChange} />
                         </div>
                         <div id="mce-responses" className="clear">

@@ -41,7 +41,7 @@ class App extends Component {
          <main>
             <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
                <div className="container">
-                  <a className="navbar-brand" href="#" id="navbar-brand">
+                  <a className="navbar-brand" href="/" id="navbar-brand">
                      <img className="logo img-fluid" src="/img/logo.png" alt="" id="logo" />
                   </a>
                   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

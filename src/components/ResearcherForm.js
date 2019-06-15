@@ -19,7 +19,6 @@ class ResearcherForm extends Component {
     }
     render() {
         return (
-
             <div id="mc_embed_signup">
                 <form action="https://advensci.us19.list-manage.com/subscribe/post?u=1459cc2a9b4681a90674626f5&amp;id=eddcba6822" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">

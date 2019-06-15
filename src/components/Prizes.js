@@ -16,25 +16,25 @@ class Prizes extends Component {
   render() {
     return (
       <div className="container-fluid prizes" id="prizes">
-          <div className="container prizes">
-            <div className="row">
-              <div className="col text-center">
-                <h3 className="prizes-subtitle">On parle de nous</h3>
-                <h2 className="prizes-title">Prix et mentions</h2>
-              </div>
-            </div>
-            <div className="row list-prizes">
-              <div className="col-sm-6 col-lg-4  prize-container">
-                <Prize prizeImg={this.state.img_explorez} prizeTitle={this.state.title_explorez} />
-              </div>
-              <div className="col-sm-6 col-lg-4  prize-container">
-                <Prize prizeImg={this.state.img_esquissez} prizeTitle={this.state.title_esquissez} />
-              </div>
-              <div className="col-sm-6 col-lg-4  prize-container">
-                <Prize prizeImg={this.state.img_concretisez} prizeTitle={this.state.title_concretisez} />
-              </div>
+        <div className="container prizes">
+          <div className="row">
+            <div className="col text-center">
+              <h3 className="prizes-subtitle">On parle de nous</h3>
+              <h2 className="prizes-title">Prix et mentions</h2>
             </div>
           </div>
+          <div className="row list-prizes">
+            <div className="col-sm-6 col-lg-4  prize-container">
+              <Prize prizeImg={this.state.img_explorez} prizeTitle={this.state.title_explorez} />
+            </div>
+            <div className="col-sm-6 col-lg-4  prize-container">
+              <Prize prizeImg={this.state.img_esquissez} prizeTitle={this.state.title_esquissez} />
+            </div>
+            <div className="col-sm-6 col-lg-4  prize-container">
+              <Prize prizeImg={this.state.img_concretisez} prizeTitle={this.state.title_concretisez} />
+            </div>
+          </div>
+        </div>
       </div>
     )
   }

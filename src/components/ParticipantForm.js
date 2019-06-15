@@ -13,7 +13,6 @@ class ParticipantForm extends Component {
          genderValue: '',
          otherInfoValue: ''
       };
-
    }
 
    onFieldChange = (event) => {
@@ -31,6 +30,7 @@ class ParticipantForm extends Component {
    render() {
       return (
          <div id="mc_embed_signup">
+            <h3>Si vous désirez être participant, vous serez les premiers à avoir accès à l’application dès son lancement.</h3>
             <form action="https://advensci.us19.list-manage.com/subscribe/post?u=1459cc2a9b4681a90674626f5&amp;id=5e9ddda649" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                <div id="mc_embed_signup_scroll">
                   <div class="indicates-required"><span class="asterisk">*</span> champs requis</div>
@@ -60,12 +60,12 @@ class ParticipantForm extends Component {
                      </div>
                   </div>
                   <div class="mc-field-group">
-                     <label for="mce-EMAIL">Adresse courriel  <span class="asterisk">*</span>
+                     <label for="mce-EMAIL">Adresse courriel <span class="asterisk">*</span>
                      </label>
                      <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" />
                   </div>
                   <div class="mc-field-group">
-                     <label for="mce-MMERGE4">Genre </label>
+                     <label for="mce-MMERGE4">Genre <span class="asterisk">*</span></label>
                      <select name="MMERGE4" class="" id="mce-MMERGE4">
                         <option value="Homme">Homme</option>
                         <option value="Femme">Femme</option>

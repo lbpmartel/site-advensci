@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Prizes from './components/Prizes';
 import Sponsors from './components/Sponsors';
 import Social from './components/Social';
+import Footer from './components/Footer';
 
 import './App.scss';
 
@@ -20,21 +21,11 @@ class App extends Component {
       this.state = {
          translationTexts: data
       }
-      //this.loadJson();
    }
 
    componentDidMount() {
       scrollFunction();
    }
-
-   loadJson() {
-      var data = JSON.parse(JSON.stringify(jsonData));
-
-      this.setState({
-         translationTexts: data
-      });
-   }
-
 
    render() {
       return (
@@ -50,9 +41,9 @@ class App extends Component {
 
                   <div className="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                            <a className="nav-link" href="mailto:info@advensci.ca"><img src="img/ma.png" alt=""></img></a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                            <a className="nav-link" href="https://facebook.com/advensci.inc"><img src="img/fa.png" alt=""></img></a>
                         </li>
@@ -75,7 +66,7 @@ class App extends Component {
             <Prizes />
             <Sponsors />
             <Social />
-
+            <Footer />
          </main>
       );
    }

@@ -7,11 +7,15 @@ class Social extends Component {
             <section id="social" className="container">
                <div className="row">
                   <div className="col-lg-6">
-                     <a className="twitter-timeline" href="https://twitter.com/advensci" data-tweet-limit="1">Tweets d'Advensci</a>
+                     <a className="twitter-timeline" style={{maxWidth: '500px'}} href="https://twitter.com/advensci" data-tweet-limit="1">Tweets d'Advensci</a>
                   </div>
 
-                  <div className="col-lg-6">
-                     <iframe title="facebook-timeline" className="facebook-timeline" src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fadvensci.inc&width=600&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435" scrolling="yes" frameBorder="0" allowtransparency="true"></iframe>
+                  <div className="col-lg-6 d-flex">
+                     <div className="ml-auto">
+                        <iframe title="facebook-timeline"
+                           className="facebook-timeline" 
+                           src="https://www.facebook.com/plugins/page.php?href=href=https%3A%2F%2Fwww.facebook.com%2Fadvensci.inc&tabs=timeline&width=500&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" scrolling="yes" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                     </div>
                   </div>
                </div>
             </section >

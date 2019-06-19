@@ -4,7 +4,7 @@ class Translation extends React.Component {
 
     render() {
         return (
-            <div>{this.props.texts[`${this.props.langage}`][`${this.props.cle}`]}</div>
+            <div>{this.props.texts[`${this.props.language}`][`${this.props.textKey}`]}</div>
         )
     }
 }

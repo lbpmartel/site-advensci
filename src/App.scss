@@ -51,6 +51,11 @@ main {
       font-weight: 500 !important;
    }
 
+   .icone-contact {
+      height: 35px;
+      width: 35px;
+   }
+
    .btn {
       border: 1px $turquoise solid;
       padding: 15px;
@@ -102,6 +107,14 @@ main {
          display: flex;
          align-items: center;
          max-height: 100%;
+      }
+
+      .language-choice {
+         font-size: $html-fs * 1.3 +px;
+
+         &:hover {
+            cursor: pointer;
+         }
       }
    }
 
@@ -461,8 +474,9 @@ main {
          background: white;
          float: left;
       }
+
       .twitter-timeline {
-         width:500px !important;
+         width: 500px !important;
          max-width: 500px !important;
       }
    }

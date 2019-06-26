@@ -8,7 +8,7 @@ class Sponsors extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col text-center">
-                            <h2>Avec le soutien de...</h2>
+                            <h2>{this.props.translator('sponsors_title')}</h2>
                         </div>
                     </div>
                     <div className="row">

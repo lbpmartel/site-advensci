@@ -4,7 +4,7 @@ class Footer extends React.Component {
     render() {
         return (
             <footer className="text-center pt-5 my-5">
-                <h3>Tous droits réservés Advensci {(new Date().getFullYear())}</h3>
+                <h3>{this.props.translator("footer_rights", true)} Advensci {(new Date().getFullYear())}</h3>
             </footer>
         );
     }

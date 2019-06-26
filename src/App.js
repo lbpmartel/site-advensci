@@ -14,7 +14,7 @@ import Translation from './components/Translation';
 import './App.scss';
 
 import jsonData from './texts.json';
-import { runInThisContext } from 'vm';
+//import { runInThisContext } from 'vm';
 
 class App extends Component {
    constructor(props) {
@@ -35,12 +35,12 @@ class App extends Component {
       //const localStorage = window.localStorage();
       const localStorageLanguage = localStorage.getItem('prefered_language');
       // Si le user a déjà visité le site, on a enregistré son prefered_language 
-      if (localStorageLanguage && (localStorageLanguage == "fr" || localStorageLanguage == "en"))
+      if (localStorageLanguage && (localStorageLanguage === "fr" || localStorageLanguage === "en"))
          return localStorageLanguage;
       //Si le user n'a pas visité le site, on regarde son langage de browser.
       else {
          var userLanguage = window.navigator.userLanguage || window.navigator.language;
-         if (userLanguage.substring(0, 2) == "fr" || userLanguage.substring(0, 2) == "en")
+         if (userLanguage.substring(0, 2) === "fr" || userLanguage.substring(0, 2) === "en")
             return userLanguage.substring(0, 2);
       }
       //Francais par défaut 
@@ -53,7 +53,7 @@ class App extends Component {
 
    onLanguageChange() {
       var newLanguage;
-      if (this.state.language == "fr")
+      if (this.state.language === "fr")
          newLanguage = "en";
       else
          newLanguage = "fr";
@@ -62,7 +62,14 @@ class App extends Component {
       window.location.reload()
    }
 
-   getTranslationText(textKey) {
+   getTranslationText(textKey, stringNeeded) {
+      if (stringNeeded) {
+         const textes = this.state.translationTexts;
+         const lang = this.state.language;
+         const retour = textes[`${lang}`][`${textKey}`];
+         debugger;
+         return retour;
+      }
       return <Translation
          texts={this.state.translationTexts}
          language={this.state.language}
@@ -97,7 +104,7 @@ class App extends Component {
                         </li>
                         <li className="nav-item ml-lg-4 ml-sm-2 pt-lg-1">
                            <a className="nav-link" onClick={this.onLanguageChange}>
-                              {this.state.language == "fr" ?
+                              {this.state.language === "fr" ?
                                  <span className="language-choice">En</span> :
                                  <span className="language-choice">Fr</span>
                               }
@@ -112,7 +119,6 @@ class App extends Component {
             <Advantages translator={this.getTranslationText} />
             <div className="container-fluid bg-team-prize" id="bg-team-prize">
                <Team
-                  texts={this.state.translationTexts}
                   translator={this.getTranslationText} />
                <Contact translator={this.getTranslationText} />
             </div>

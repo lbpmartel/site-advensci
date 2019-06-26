@@ -16,11 +16,11 @@ class Header extends React.Component {
                         </div>
                         <div className="header-photo col-lg-6 d-flex">
                             {
-                                this.props.language == "fr" &&
+                                this.props.language === "fr" &&
                                 <img src="/img/nexus_resized.png" alt=""></img>
                             }
                             {
-                                this.props.language == "en" && //TODO Changer le path pour le phone en anglais
+                                this.props.language === "en" && //TODO Changer le path pour le phone en anglais
                                 <img src="/img/nexus_resized.png" alt=""></img>
                             }
                         </div>

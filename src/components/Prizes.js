@@ -7,10 +7,7 @@ class Prizes extends Component {
     this.state = {
       img_explorez: "prix-1.jpg",
       img_esquissez: "prix-2.jpg",
-      img_concretisez: "prix-3.jpg",
-      title_explorez: "Obtention de",
-      title_esquissez: "2e place",
-      title_concretisez: "Bourse du FICSUM"
+      img_concretisez: "prix-3.jpg"
     }
   }
   render() {
@@ -19,19 +16,19 @@ class Prizes extends Component {
         <div className="container prizes">
           <div className="row">
             <div className="col text-center">
-              <h3 className="prizes-subtitle">On parle de nous</h3>
-              <h2 className="prizes-title">Prix et mentions</h2>
+              <h3 className="prizes-subtitle">{this.props.translator('prizes_title')}</h3>
+              <h2 className="prizes-title">{this.props.translator('prizes_subtitle')}</h2>
             </div>
           </div>
           <div className="row list-prizes">
             <div className="col-sm-6 col-lg-4  prize-container">
-              <Prize prizeImg={this.state.img_explorez} prizeTitle={this.state.title_explorez} />
+              <Prize prizeImg={this.state.img_explorez} prizeTitle={this.props.translator('prizes_1')} />
             </div>
             <div className="col-sm-6 col-lg-4  prize-container">
-              <Prize prizeImg={this.state.img_esquissez} prizeTitle={this.state.title_esquissez} />
+              <Prize prizeImg={this.state.img_esquissez} prizeTitle={this.props.translator('prizes_2')} />
             </div>
             <div className="col-sm-6 col-lg-4  prize-container">
-              <Prize prizeImg={this.state.img_concretisez} prizeTitle={this.state.title_concretisez} />
+              <Prize prizeImg={this.state.img_concretisez} prizeTitle={this.props.translator('prizes_3')} />
             </div>
           </div>
         </div>

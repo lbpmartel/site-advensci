@@ -8,28 +8,15 @@ import Contact from './components/Contact';
 import Prizes from './components/Prizes';
 import Sponsors from './components/Sponsors';
 import Social from './components/Social';
-<<<<<<< HEAD
 import Footer from './components/Footer';
 import Translation from './components/Translation';
 
-||||||| merged common ancestors
-=======
-import Footer from './components/Footer';
-
->>>>>>> 22f264f1dd6a527d54dfe2ca3f142bd42271d10f
 import './App.scss';
 
-<<<<<<< HEAD
 import jsonData from './texts.json';
 //import { runInThisContext } from 'vm';
 
-||||||| merged common ancestors
-=======
-import jsonData from './texts.json';
-
->>>>>>> 22f264f1dd6a527d54dfe2ca3f142bd42271d10f
 class App extends Component {
-<<<<<<< HEAD
    constructor(props) {
       super(props);
       this.onLanguageChange = this.onLanguageChange.bind(this);
@@ -89,21 +76,6 @@ class App extends Component {
          textKey={textKey} />;
    }
 
-||||||| merged common ancestors
-=======
-   constructor(props) {
-      super(props)
-      var data = JSON.parse(JSON.stringify(jsonData));
-      this.state = {
-         translationTexts: data
-      }
-   }
-
-   componentDidMount() {
-      scrollFunction();
-   }
-
->>>>>>> 22f264f1dd6a527d54dfe2ca3f142bd42271d10f
    render() {
       return (
          <main>
@@ -146,36 +118,14 @@ class App extends Component {
             <Mission translator={this.getTranslationText} />
             <Advantages translator={this.getTranslationText} />
             <div className="container-fluid bg-team-prize" id="bg-team-prize">
-<<<<<<< HEAD
                <Team
                   translator={this.getTranslationText} />
                <Contact translator={this.getTranslationText} />
-||||||| merged common ancestors
-               <Team />
-               <Contact />
-=======
-               <Team texts={
-                  this.state.translationTexts
-               } />
-               <Contact />
->>>>>>> 22f264f1dd6a527d54dfe2ca3f142bd42271d10f
             </div>
-<<<<<<< HEAD
             <Prizes translator={this.getTranslationText} />
             <Sponsors translator={this.getTranslationText} />
             <Social translator={this.getTranslationText} />
             <Footer translator={this.getTranslationText} />
-||||||| merged common ancestors
-            <Prizes />
-            <Sponsors />
-            <Social />
-
-=======
-            <Prizes />
-            <Sponsors />
-            <Social />
-            <Footer />
->>>>>>> 22f264f1dd6a527d54dfe2ca3f142bd42271d10f
          </main>
       );
    }
